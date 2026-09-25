@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TOKKATSU広場は引っこしました</title>
+<link rel="canonical" href="https://tokkatsuhiroba.github.io/">
+<meta name="robots" content="noindex">
+<!-- JSが動かないときのために。0秒だと「戻る」が効かなくなるので1秒待ちます。 -->
+<meta http-equiv="refresh" content="1;url=https://tokkatsuhiroba.github.io/">
+<script>
+/* 見ていたページのまま、新しい住所へ渡します。
+     /tokkatsu-hiroba/bansho.html#b-xxx  →  /bansho.html#b-xxx
+   replace を使うのは、「戻る」でここへ戻ってきて、また飛ばされる
+   という行き止まりを作らないためです。 */
+(function () {
+  var saki = 'https://tokkatsuhiroba.github.io'
+           + location.pathname.replace(/^\/tokkatsu-hiroba/, '')
+           + location.search + location.hash;
+  location.replace(saki);
+})();
+</script>
+<style>
+  body{font:16px/1.9 -apple-system,"Hiragino Sans",sans-serif;
+       margin:0;padding:64px 24px;text-align:center;color:#333;background:#fffdf8}
+  h1{font-size:20px;margin:0 0 16px}
+  a{color:#1a6b4f;font-weight:700}
+</style>
+</head>
+<body>
+  <h1>TOKKATSU広場は、新しい住所に引っこしました</h1>
+  <p>まもなく自動でうつります。うつらないときは、こちらを押してください。</p>
+  <p><a href="https://tokkatsuhiroba.github.io/">https://tokkatsuhiroba.github.io/</a></p>
+</body>
+</html>
